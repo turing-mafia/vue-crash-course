@@ -9,7 +9,12 @@
 <script>
 export default {
     name: "TodoItem",
-    props: ["todo"]
+    props: ["todo"],
+    methods: {
+        markComplete() {
+            console.log(123)
+        }
+    }
 }
 </script>
 
