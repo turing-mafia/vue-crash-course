@@ -1,12 +1,14 @@
 <template>
-    <div>
-        <p>Todo Item</p>
+    <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
+        <p>Hi</p>
+        <p>{{todo.title}}</p>
     </div>
 </template>
 
 <script>
 export default {
-    name: "TodoItem"
+    name: "TodoItem",
+    props: ["todo"]
 }
 </script>
 
